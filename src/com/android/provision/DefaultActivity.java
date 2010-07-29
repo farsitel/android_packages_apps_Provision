@@ -16,20 +16,54 @@
 
 package com.android.provision;
 
+import android.app.ActivityManagerNative;
 import android.app.Activity;
+import android.app.IActivityManager;
+import android.app.backup.BackupManager;
 import android.content.ComponentName;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
+import android.os.RemoteException;
+import android.os.SystemProperties;
 import android.os.Bundle;
 import android.provider.Settings;
+
+import java.util.Locale;
 
 /**
  * Application that sets the provisioned bit, like SetupWizard does.
  */
 public class DefaultActivity extends Activity {
 
+    /**
+    * TODO: Document me and move me!
+    */
+    public static void changeLang(String language, String country) {
+        try {
+            IActivityManager am = ActivityManagerNative.getDefault();
+            Configuration config = am.getConfiguration();
+
+            Locale locale = new Locale(language, country);
+            config.locale = locale;
+
+            // indicate this isn't some passing default - the user wants this remembered
+            config.userSetLocale = true;
+
+            am.updateConfiguration(config);
+            // Trigger the dirty bit for the Settings Provider.
+            BackupManager.dataChanged("com.android.providers.settings");
+        } catch (RemoteException e) {
+            // Intentionally left blank
+        }
+
+    }
+
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+
+        changeLang(SystemProperties.get("ro.product.locale.language"),
+                   SystemProperties.get("ro.product.locale.region"));
 
         // Add a persistent setting to allow other apps to know the device has been provisioned.
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.DEVICE_PROVISIONED, 1);

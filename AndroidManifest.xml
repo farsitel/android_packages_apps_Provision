@@ -15,13 +15,15 @@
  limitations under the License.
  -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.android.provision">
+        package="com.android.provision"
+        android:sharedUserId="android.uid.system">
 
     <original-package android:name="com.android.provision" />
 
     <!-- For miscellaneous settings -->
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
 
     <application>
         <activity android:name="DefaultActivity"
