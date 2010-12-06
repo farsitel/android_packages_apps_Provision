@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="next_button_label">Next</string>
+    <string name="back_button_label">Back</string>
+    <string name="tutorial_button_label">Tutorial</string>
+    <string name="finish_button_label">Date &amp; Time</string>
+    <string name="begin_button_label">Begin</string>
+    <string name="setup_wizard_title">Setup Wizard</string>
+    <string name="emergency_dial">Emergency dial</string>
+    <string name="change_language">Change language</string>
+
+    <string name="start_title">Welcome to FarsiTel</string>
+    <string name="page0_message">Blah Blah\nBlah</string>
+
+    <string name="tutorial_intro_title">Tips</string>
+    <string name="tutorial_intro_message_generic">Blah Blah %s</string>
+</resources>

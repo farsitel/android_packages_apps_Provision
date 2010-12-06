@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/title_bar_area"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/title_text"
+            android:textAppearance="@style/setupWizardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:text="@string/start_title"
+            android:layout_weight="1.0" />
+
+        <View android:layout_gravity="center"
+            android:background="@color/divider_color"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="12.0dip"
+            android:layout_marginBottom="11.0dip" />
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/bottom_bar_area"
+        android:layout_alignParentBottom="true"
+        android:background="@android:drawable/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/back_button"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:text="@string/back_button_label"
+            android:drawableLeft="@drawable/ic_btn_back"
+            android:drawablePadding="10.0dip"
+            android:layout_alignParentLeft="true" />
+
+        <Button android:id="@+id/next_button"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:text="@string/begin_button_label"
+            android:drawableRight="@drawable/ic_btn_next"
+            android:drawablePadding="10.0dip"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <ScrollView android:id="@+id/body"
+        android:paddingBottom="4dip"
+        android:fillViewport="true"
+        android:layout_above="@id/bottom_bar_area"
+        android:layout_below="@id/title_bar_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout android:id="@+id/wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        
+            <TextView android:id="@+id/body_text"
+                android:textSize="17sp"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/page0_message"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="2dip"
+                android:lineSpacingMultiplier="0.98" />
+
+            <RelativeLayout android:id="@+id/page0_box"
+                android:layout_alignParentBottom="true"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content">
+                <Button android:id="@+id/welcome_emergency_dial"
+                    android:layout_gravity="center"
+                    android:layout_width="150.0dip"
+                    android:layout_height="56.0dip"
+                    android:layout_margin="5.0dip"
+                    android:text="@string/emergency_dial"
+                    android:drawableLeft="@drawable/ic_btn_emergency"
+                    android:drawablePadding="3.0dip"
+                    android:layout_alignParentLeft="true" />
+                <Button android:id="@+id/welcome_change_language"
+                    android:layout_gravity="center"
+                    android:layout_width="150.0dip"
+                    android:layout_height="56.0dip"
+                    android:layout_margin="5.0dip"
+                    android:text="@string/change_language"
+                    android:drawableRight="@drawable/ic_btn_lang"
+                    android:drawablePadding="3.0dip"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/page1_box"
+                android:layout_alignParentBottom="true"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content">
+                <Button android:id="@+id/tutorial_start"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5.0dip"
+                    android:text="@string/tutorial_button_label"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

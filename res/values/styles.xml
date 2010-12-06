@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="setupWizardTitle">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+</resources>

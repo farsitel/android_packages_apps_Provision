@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="next_button_label">بعدی</string>
+    <string name="back_button_label">قبلی</string>
+    <string name="tutorial_button_label">خودآموز</string>
+    <string name="finish_button_label">تاریخ و زمان</string>
+    <string name="begin_button_label">شروع</string>
+    <string name="setup_wizard_title">راه‌اندازی گام‌به‌گام</string>
+    <string name="emergency_dial">شماره‌گیری اضطراری</string>
+    <string name="change_language">تغییر زبان</string>
+
+    <string name="start_title">به فارسی‌تل خوش آمدید</string>
+    <string name="page0_message">
+    امیدواریم سیستم‌عامل فارسی‌تل تجربهٔ دلنشینی از استفادهٔ از گوشی همراه هوشمند برای شما داشته باشد.
+    &lt;font size="17">\n&lt;/font> \n
+    طی چند گام %s خود را برای همراهیتان آماده کنید.</string>
+
+    <string name="tutorial_intro_title">چند نکته</string>
+    <string name="tutorial_intro_message_generic"><li>از طریق دکمهٔ «خودآموز» در پایین صفحه می‌توانید چند نکته دربارهٔ نحوهٔ استفاده از سیستم عامل فارسی‌تل فرا بگیرید.</li>
+    <font size="17">\n</font> \n
+    <li>یکی از ویژگی‌های گوشی‌های همراه آندرویدی، یکپارچگی امکاناتش با حساب کاربری گوگل است. ما این ویژگی را حفظ کرده‌ایم ولی از آنجا که این گام نیاز به اینترنت قابل اطمینانی دارد، دریافت نام کاربری و گذرواژه‌تان را در این مرحله انجام نمی‌دهیم. در زمانی که به ارتباط اینترنتی مناسب دسترسی دارید با اجرای نرم‌افزار جی‌میل حساب کاربری‌تان را راه بیاندازید.</li>
+    </string>
+</resources>
