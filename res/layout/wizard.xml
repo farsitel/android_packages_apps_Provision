@@ -76,6 +76,7 @@
                 android:paddingLeft="10dip"
                 android:paddingRight="10dip"
                 android:paddingTop="2dip"
+                android:autoLink="web"
                 android:lineSpacingMultiplier="0.98" />
 
             <RelativeLayout android:id="@+id/page0_box"

@@ -10,8 +10,10 @@
     <string name="change_language">Change language</string>
 
     <string name="start_title">Welcome to FarsiTel</string>
-    <string name="page0_message">Blah Blah\nBlah</string>
+    <string name="page0_message">We hope you will have a pleasant experience in using your smartphone with FarsiTel operating system. To always have the latest feature and applications, please keep your phone updated, and visit us at <font fgcolor="#ff749c00"><a href="http://farsitel.com/fa/" fgcolor="749C00FF">http://farsitel.com/‎</a></font>.&lt;br  />&lt;br  />By a few simple steps you can set up your %s. Please touch "Begin" to start.</string>
 
     <string name="tutorial_intro_title">Tips</string>
-    <string name="tutorial_intro_message_generic">Blah Blah %s</string>
+    <string name="tutorial_intro_message_generic"><li>Please touch "Tutorial" if you want to learn a thing or two about your phone.</li>
+    <li>Setting up a Google account requires a reliable internet connection, so we removed that from this steps. You can add your Google account later by going to "Accounts &amp; sync" in Settings.</li>
+    </string>
 </resources>
